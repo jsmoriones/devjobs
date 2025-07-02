@@ -1,0 +1,35 @@
+<div style="max-width: 600px; margin: 20px auto; background-color: #ffffff; border-radius: 8px; overflow: hidden; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); font-family: Arial, Helvetica, sans-serif;">
+        <!-- Header Section -->
+        <div style="background-color: #532480; padding: 20px; text-align: center; border-top-left-radius: 8px; border-top-right-radius: 8px;">
+            <!-- Reemplaza esta URL con la URL de tu logo -->
+            <img src="https://placehold.co/150x50/532480/FFFFFF?text=TU+LOGO" alt="Logo de la Empresa" style="max-width: 150px; height: auto; display: block; margin: 0 auto;">
+            <h1 style="color: #ffffff; font-size: 28px; margin: 10px 0 0; font-weight: bold;">Restablece tu Contraseña</h1>
+        </div>
+
+        <!-- Content Section -->
+        <div style="padding: 30px; color: #333333; line-height: 1.6; font-size: 16px;">
+            <p style="margin-bottom: 15px;">Hola **{{nombre}}**,</p>
+            <p style="margin-bottom: 15px;">Has solicitado restablecer tu contraseña para tu cuenta en devJobs. Haz clic en el siguiente botón para proceder:</p>
+
+            <div style="text-align: center; margin: 25px 0;">
+                <a href="{{resetUrl}}" style="display: inline-block; padding: 15px 30px; background-color: #94C022; color: #ffffff; text-decoration: none; border-radius: 5px; font-size: 18px; font-weight: bold; text-transform: uppercase; letter-spacing: 0.5px;">
+                    Restablecer Contraseña
+                </a>
+            </div>
+
+            <p style="margin-bottom: 15px;">Este enlace es temporal y válido por 1 Hora. Si el enlace expira, necesitarás solicitar un nuevo correo de restablecimiento.</p>
+
+            <p style="margin-bottom: 15px;">Si tienes problemas para hacer clic en el botón, copia y pega el siguiente enlace en tu navegador:</p>
+            <p style="word-break: break-all; font-size: 14px; color: #007bff; margin-bottom: 15px;"><a href="{{resetUrl}}" style="color: #007bff; text-decoration: underline;">{{resetUrl}}</a></p>
+
+            <p style="margin-bottom: 15px;">Si no solicitaste este restablecimiento de contraseña, puedes ignorar este correo electrónico de forma segura.</p>
+        </div>
+
+        <!-- Footer Section -->
+        <div style="background-color: #e0e0e0; padding: 20px; text-align: center; font-size: 12px; color: #666666; border-bottom-left-radius: 8px; border-bottom-right-radius: 8px;">
+            <p style="margin: 5px 0;">&copy; {{currentYear}} **devJobs**. Todos los derechos reservados.</p>
+            <p style="margin: 5px 0;">devjobs@gmail.com</p>
+            <p style="margin: 5px 0;"><a href="mailto:{{companyEmail}}" style="color: #532480; text-decoration: none;">{{companyEmail}}</a> | <a href="{{companyWebsite}}" style="color: #532480; text-decoration: none;">{{companyWebsite}}</a></p>
+            <p style="margin-top: 15px; margin-bottom: 5px;">Este es un correo electrónico automático, por favor no respondas a este mensaje.</p>
+        </div>
+    </div>
