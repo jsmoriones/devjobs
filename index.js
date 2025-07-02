@@ -16,7 +16,7 @@ const createError = require("http-errors");
 const passport = require("./config/passport");
 
 const store = MongoStore.create({
-  mongoUrl: process.env.DATABASE
+  mongoUrl: process.env.DATABASE_AUTH
 });
 
 const router = require("./routes")
