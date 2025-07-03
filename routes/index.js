@@ -90,5 +90,11 @@ module.exports = () => {
     //buscador
     router.post("/buscador", vacantesController.buscarVacantes);
 
+
+
+    app.get('/health', (req, res) => {
+	  res.status(200).json({ status: 'OK' });
+	});
+
 	return router;
 }

@@ -86,7 +86,7 @@ app.use((error, req, res, next) => {
 
 //Heroki asigna el puerto
 const host = '0.0.0.0';
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 10000;
 
 app.listen(host, port, () => {
 	console.log(`Servidor corriendo en el puerto ${port}`);
